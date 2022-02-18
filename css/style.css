@@ -1,3 +1,7 @@
 .bg-custom{
     background-color: rgba(119, 136, 153, 0.521);
 }
+.width{
+    display: inline-block;
+    width: 80px;
+}
