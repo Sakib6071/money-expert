@@ -27,7 +27,7 @@ if(income>=0 && foodCost>=0 && rentCost>=0 && clothesCost>=0){
 
 }
 else{
-    alert('Please Enter positive value. Income or Cost value is positive number')
+    alert('Please Enter positive number. Income or Cost value is positive number')
 }
 
 })
