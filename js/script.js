@@ -15,7 +15,7 @@ const rentCost=stringToFloat('rentCost');
 const clothesCost=stringToFloat('clothesCost');
 const totalCost=foodCost+rentCost+clothesCost;
 const balance=income-totalCost;
-if(income>0 && foodCost>0 && rentCost>0 && clothesCost>0){
+if(income>=0 && foodCost>=0 && rentCost>=0 && clothesCost>=0){
     if(totalCost<=income){
         const totalCostField = document.getElementById('totalExpensesValue');
         const balanceField = document.getElementById('currentBalanceValue');
