@@ -1,12 +1,13 @@
+/* this function get value and convert to float value*/
 function stringToFloat(input){
     const inputField=document.getElementById(input);
     const inputFieldText=inputField.value;
     const inputValue = parseFloat(inputFieldText);
-    // inputField.value='';
+     /* inputField.value='';    this line is commented, because when click the calculate button, all value goes out. but when go to save button, it's better to see the all value. that's why it is commented. */
     return inputValue;
 }
 
-
+/* Calculate button events */
 document.getElementById('calculate-btn').addEventListener('click', function(){
 const income=stringToFloat('mainSalary');
 const foodCost=stringToFloat('foodCost');
@@ -31,6 +32,8 @@ else{
 
 })
 
+
+/* save button event */
 document.getElementById('save-btn').addEventListener('click',function(){
     const income=stringToFloat('mainSalary');
     const foodCost=stringToFloat('foodCost');
